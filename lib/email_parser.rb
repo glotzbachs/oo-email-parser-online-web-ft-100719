@@ -11,7 +11,7 @@ attr_accessor :emails
   end
   
   def parse
-    email=@emails.split(/[,]\s/)
+    @emails<<@emails.split(/[,]\s/)
   end
   
 end
